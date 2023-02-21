@@ -23,7 +23,7 @@ def procesar_frase(frase):
     palabras_desordenadas = [desordenar_palabra(palabra) for palabra in palabras]
     return ' '.join(palabras_desordenadas)
 
-# Función principal del programa
+# Función principal del programa "Solicitar entrada y salida de programa"
 def main():
     frase = input("Introduce una frase: ")
     frase_desordenada = procesar_frase(frase)

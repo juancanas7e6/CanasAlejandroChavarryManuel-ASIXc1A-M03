@@ -29,6 +29,6 @@ def main():
     frase_desordenada = procesar_frase(frase)
     print(frase_desordenada)
 
-# Ejecutar la función principal
+# Ejecutar la función principal "Forma de almacenar código que solo debería ejecutarse cuando el archivo se ejecuta como un script."
 if __name__ == '__main__':
     main()

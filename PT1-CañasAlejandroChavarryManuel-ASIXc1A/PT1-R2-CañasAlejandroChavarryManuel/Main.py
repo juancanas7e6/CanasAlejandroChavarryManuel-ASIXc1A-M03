@@ -1,5 +1,5 @@
 """
-   Alejandro Cañas y Manuel Chavarry
+   Alejandro Cañas, Manuel Chavarry y Mauro Arena
 
    DATE:
    15/02/2023

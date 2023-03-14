@@ -11,25 +11,46 @@
    Proyect "DataSource.py" R2 - Paraules Boges
 """
 import requests
+import openai
 
-def getDataFromKeyboard():
+def get_data_from_keyboard():
     """Esta función recoge los datos del teclado y los retorna como una única cadena de caracteres"""
     return input('Introduce un texto: ')
 
-def getDataFromServer(URL):
-    """Esta función obtiene los datos desde una URL y los retorna como una única cadena de caracteres"""
-    response = requests.get(URL)
-    return response.text
-
-"Se debe tener en cuenta que para la implementación del método getDataFromChatGPT es necesario utilizar la API de GPT-3 de OpenAI, la cual requiere una clave de API válida y un proceso de autenticación previo."
-def getDataFromChatGPT(question):
-    """Esta función obtiene los datos desde OpenAI's GPT-3 API mediante la pregunta y los retorna como una única cadena de caracteres"""
-    # Aquí iría el código para interactuar con la API de GPT-3
-    # y obtener los datos en función de la pregunta
-    return "Respuesta obtenida desde GPT-3"
-
-def getDataFromFile(fileName):
-    """Esta función recoge los datos desde un archivo y los retorna como una única cadena de caracteres"""
-    with open(fileName, 'r') as f:
-        data = f.read()
+def get_data_from_url(url="Introduce una URL"):
+    """Esta función recoge datos desde una URL"""
+    response = requests.get(url)
+    data = response.text
     return data
+
+def get_data_from_chatgpt(prompt="Introduce tu pregunta"):
+    """Esta función recoge datos desde ChatGPT a través de una API"""  
+    openai.api_key = "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"
+    response = openai.Completion.create(
+        engine="davinci",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    data = response.choices[0].text.strip()
+    return data
+
+def choose_data_source():
+    """Esta función permite al usuario elegir una fuente de datos"""
+    print("Elige una opción:")
+    print("1 - Recopilar datos desde el teclado")
+    print("2 - Recopilar datos desde una URL")
+    print("3 - Recopilar datos desde ChatGPT")
+    choice = input("Opción elegida: ")
+    if choice == "1":
+        return get_data_from_keyboard()
+    elif choice == "2":
+        url = input("Introduce una URL: ")
+        return get_data_from_url(url)
+    elif choice == "3":
+        prompt = input("Introduce tu pregunta: ")
+        return get_data_from_chatgpt(prompt)
+    else:
+        print("Opción inválida")

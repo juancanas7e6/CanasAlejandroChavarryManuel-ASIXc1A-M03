@@ -10,14 +10,13 @@
    DESCRIPTION:
    Proyect "Main.py" R2 - Paraules Boges
 """
-from dataSource import getDataFromKeyboard
-from crazyWords import get_crazy_words
-
+import DataSource 
+import CrazyWords 
 # Obtenemos los datos del teclado
-input_data = getDataFromKeyboard()
+input_data=DataSource.choose_data_source()
 
 # Procesamos los datos para obtener las "paraules boges"
-crazy_text = get_crazy_words(input_data)
+crazy_text = CrazyWords.get_crazy_words(input_data)
 
 # Mostramos el resultado por pantalla
 print(crazy_text)

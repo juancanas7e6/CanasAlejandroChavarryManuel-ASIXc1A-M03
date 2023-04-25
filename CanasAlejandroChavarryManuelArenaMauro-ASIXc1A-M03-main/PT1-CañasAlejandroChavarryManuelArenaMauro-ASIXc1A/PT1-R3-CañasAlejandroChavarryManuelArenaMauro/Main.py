@@ -2,21 +2,8 @@ import os
 import logging
 from datetime import datetime
 from pathlib import Path
-import random
+from Crazywords import get_crazy_words
 
-def get_crazy_word(word):
-    """Esta función recibe una palabra y la retorna desordenada excepto por la primera y la última letra"""
-    if len(word) < 3:
-        return word
-    middle = list(word[1:-1])
-    random.shuffle(middle)
-    return word[0] + ''.join(middle) + word[-1]
-
-def get_crazy_words(text):
-    """Esta función recibe un texto y lo retorna con las palabras desordenadas"""
-    words = text.split()
-    crazy_words = [get_crazy_word(word) for word in words]
-    return ' '.join(crazy_words)
 
 def main():
     logging.basicConfig(filename='CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/log/boges.log',
@@ -27,7 +14,7 @@ def main():
 
     entrada_dir = 'CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/entrada'
     sortida_dir = 'CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/sortida'
-    log_dir = './log'
+    log_dir = 'CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/log'
 
     Path(sortida_dir).mkdir(parents=True, exist_ok=True)
     Path(log_dir).mkdir(parents=True, exist_ok=True)

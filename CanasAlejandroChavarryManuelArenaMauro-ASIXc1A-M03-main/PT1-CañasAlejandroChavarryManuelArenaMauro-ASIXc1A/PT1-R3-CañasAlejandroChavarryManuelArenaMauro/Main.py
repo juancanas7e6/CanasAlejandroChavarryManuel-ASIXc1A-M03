@@ -25,8 +25,8 @@ def main():
 
     logging.info('Iniciando el programa')
 
-    entrada_dir = './entrada'
-    sortida_dir = './sortida'
+    entrada_dir = 'CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/entrada'
+    sortida_dir = 'CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/sortida'
     log_dir = './log'
 
     Path(sortida_dir).mkdir(parents=True, exist_ok=True)

@@ -45,7 +45,7 @@ def main():
                     with open(output_file_path, 'w', encoding='utf-8') as output_file:
                         output_file.write(transformed_content)
 
-                    logging.info(f'Archivo transformado: {file_name} -> {file_name[:-4]}Boges.txt')
+                    logging.info(f'Archivo transformado: {file_name} -> {file_name[:-4]}Boges.txt')         #especificaciones de log
 
                 except Exception as e:
                     logging.error(f'Error al procesar el archivo {file_name}: {e}')

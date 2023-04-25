@@ -8,7 +8,7 @@ log_directory =  "CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-Ca
 if not os.path.exists(log_directory):
     os.makedirs(log_directory)
 
-log_filename = os.path.join(log_directory, 'archivo_procesamiento.log')
+log_filename = os.path.join(log_directory, 'boges.log')
 logging.basicConfig(filename=log_filename, level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -57,5 +57,5 @@ def procesar_archivos_txt(directorio, directorio_salida):
             f.write(contenido_desordenado)
 
 directorio = "CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/entrada"
-directorio_salida = "CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/entrada"
+directorio_salida = "CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/sortida"
 procesar_archivos_txt(directorio, directorio_salida)

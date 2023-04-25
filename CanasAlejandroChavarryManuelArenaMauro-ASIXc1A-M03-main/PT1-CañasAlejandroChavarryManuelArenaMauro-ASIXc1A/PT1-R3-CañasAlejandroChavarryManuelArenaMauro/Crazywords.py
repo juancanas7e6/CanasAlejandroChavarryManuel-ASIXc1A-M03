@@ -56,6 +56,6 @@ def procesar_archivos_txt(directorio, directorio_salida):
         with open(ruta_salida, 'w', encoding='utf-8') as f:
             f.write(contenido_desordenado)
 
-directorio = "CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/entrada"
-directorio_salida = "CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/sortida"
+directorio = "PT1-R3"
+directorio_salida = "./sortida"
 procesar_archivos_txt(directorio, directorio_salida)

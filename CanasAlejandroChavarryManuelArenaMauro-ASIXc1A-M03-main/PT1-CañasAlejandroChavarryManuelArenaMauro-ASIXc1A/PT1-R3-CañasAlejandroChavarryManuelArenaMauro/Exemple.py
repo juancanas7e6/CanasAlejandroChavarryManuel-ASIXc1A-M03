@@ -19,15 +19,15 @@ def get_crazy_words(text):
     return ' '.join(crazy_words)
 
 def main():
-    logging.basicConfig(filename='CanasAlejandroChavarryManuelArenaMauro-ASIXc1A-M03-main/PT1-CañasAlejandroChavarryManuelArenaMauro-ASIXc1A/PT1-R3-CañasAlejandroChavarryManuelArenaMauro/log/boges.log',
+    logging.basicConfig(filename=os.path.join(os.path.abspath(os.path.dirname(__file__)), 'log', 'boges.log'),
                         level=logging.DEBUG,
                         format='%(asctime)s - %(levelname)s - %(message)s')
 
     logging.info('Iniciando el programa')
 
     entrada_dir = './entrada'
-    sortida_dir = './sortida'
-    log_dir = './log'
+    sortida_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'sortida')
+    log_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'log')
 
     Path(sortida_dir).mkdir(parents=True, exist_ok=True)
     Path(log_dir).mkdir(parents=True, exist_ok=True)
@@ -57,5 +57,5 @@ def main():
     logging.info('Finalizando el programa')
 
 
-if __name__ == '__main__':
-    main()
+
+main()

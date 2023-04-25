@@ -48,3 +48,53 @@
 2023-04-23 11:36:40,655 - DEBUG - ISO-8859-8 Hebrew confidence = 0.05257619142645529
 2023-04-23 11:36:40,655 - DEBUG - ISO-8859-1  confidence = 0.01
 2023-04-23 11:36:40,655 - DEBUG - MacRoman  confidence = 0.0
+2023-04-25 07:21:49,384 - DEBUG - SHIFT_JIS Japanese prober hit error at byte 120
+2023-04-25 07:21:49,384 - DEBUG - EUC-JP Japanese prober hit error at byte 13
+2023-04-25 07:21:49,385 - DEBUG - GB2312 Chinese prober hit error at byte 55
+2023-04-25 07:21:49,385 - DEBUG - EUC-KR Korean prober hit error at byte 13
+2023-04-25 07:21:49,385 - DEBUG - CP949 Korean prober hit error at byte 53
+2023-04-25 07:21:49,385 - DEBUG - Big5 Chinese prober hit error at byte 55
+2023-04-25 07:21:49,385 - DEBUG - EUC-TW Taiwan prober hit error at byte 13
+2023-04-25 07:21:49,386 - DEBUG - Johab Korean prober hit error at byte 54
+2023-04-25 07:21:58,352 - DEBUG - windows-1251 Russian confidence = 0.05181527967602671
+2023-04-25 07:21:58,352 - DEBUG - KOI8-R Russian confidence = 0.054150009322068766
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-5 Russian confidence = 0.05133569764080328
+2023-04-25 07:21:58,352 - DEBUG - MacCyrillic Russian confidence = 0.05219397385159939
+2023-04-25 07:21:58,352 - DEBUG - IBM866 Russian confidence = 0.0527243905848656
+2023-04-25 07:21:58,352 - DEBUG - IBM855 Russian confidence = 0.05243735995643379
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-7 Greek confidence = 0.08564130992845947
+2023-04-25 07:21:58,352 - DEBUG - windows-1253 Greek confidence = 0.08709228254284679
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-5 Bulgarian confidence = 0.05134624339022682
+2023-04-25 07:21:58,352 - DEBUG - windows-1251 Bulgarian confidence = 0.051236632918393574
+2023-04-25 07:21:58,352 - DEBUG - TIS-620 Thai confidence = 0.0561448540765802
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-9 Turkish confidence = 0.053808861308795926
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-8 Hebrew confidence = 0.0
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-8 Hebrew confidence = 0.052330768163496064
+2023-04-25 07:21:58,352 - DEBUG - ISO-8859-8 Hebrew confidence = 0.05257619142645529
+2023-04-25 07:21:58,352 - DEBUG - no probers hit minimum threshold
+2023-04-25 07:21:58,353 - DEBUG - utf-8  confidence = 0.010000000000000009
+2023-04-25 07:21:58,353 - DEBUG - SHIFT_JIS Japanese confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - EUC-JP Japanese confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - GB2312 Chinese confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - EUC-KR Korean confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - CP949 Korean confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - Big5 Chinese confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - EUC-TW Taiwan confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - Johab Korean confidence = 0.01
+2023-04-25 07:21:58,353 - DEBUG - windows-1251 Russian confidence = 0.05181527967602671
+2023-04-25 07:21:58,353 - DEBUG - KOI8-R Russian confidence = 0.054150009322068766
+2023-04-25 07:21:58,353 - DEBUG - ISO-8859-5 Russian confidence = 0.05133569764080328
+2023-04-25 07:21:58,353 - DEBUG - MacCyrillic Russian confidence = 0.05219397385159939
+2023-04-25 07:21:58,353 - DEBUG - IBM866 Russian confidence = 0.0527243905848656
+2023-04-25 07:21:58,353 - DEBUG - IBM855 Russian confidence = 0.05243735995643379
+2023-04-25 07:21:58,353 - DEBUG - ISO-8859-7 Greek confidence = 0.08564130992845947
+2023-04-25 07:21:58,353 - DEBUG - windows-1253 Greek confidence = 0.08709228254284679
+2023-04-25 07:21:58,353 - DEBUG - ISO-8859-5 Bulgarian confidence = 0.05134624339022682
+2023-04-25 07:21:58,353 - DEBUG - windows-1251 Bulgarian confidence = 0.051236632918393574
+2023-04-25 07:21:58,354 - DEBUG - TIS-620 Thai confidence = 0.0561448540765802
+2023-04-25 07:21:58,354 - DEBUG - ISO-8859-9 Turkish confidence = 0.053808861308795926
+2023-04-25 07:21:58,354 - DEBUG - ISO-8859-8 Hebrew confidence = 0.0
+2023-04-25 07:21:58,354 - DEBUG - ISO-8859-8 Hebrew confidence = 0.052330768163496064
+2023-04-25 07:21:58,354 - DEBUG - ISO-8859-8 Hebrew confidence = 0.05257619142645529
+2023-04-25 07:21:58,354 - DEBUG - ISO-8859-1  confidence = 0.01
+2023-04-25 07:21:58,354 - DEBUG - MacRoman  confidence = 0.0
